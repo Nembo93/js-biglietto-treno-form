@@ -14,6 +14,7 @@ console.log(kmPrice);
 const minorDiscount = 0.2;
 const oldDiscount = 0.4;
 let discount="";
+console.log(minorDiscount, oldDiscount, discount)
 // Bottone
 const ticketGenerator = document.getElementById(`generator`);
 
@@ -26,26 +27,28 @@ let price="";
 function select_option(){
     let passengerAge = document.getElementById(`passenger_age`);
     let valueAge = passengerAge.options [passengerAge.selectedIndex].value;
+    Number(valueAge);
+}
     console.log(typeof passengerAge);
     console.log(typeof valueAge);
     console.log(valueAge);
-}
 
 
-ticketGenerator.addEventListener(`click`, function(){
-    
-    let price = kmPrice * tripLenght;
-    console.log(price);
-    
+ticketGenerator.addEventListener(`click`, function(){    
+    // let price = kmPrice * tripLenght;
+    // console.log(price);
+        
     if (valueAge < 18){
-    price = kmPrice * tripLenght;
-    price -= price * minorDiscount;
+    price = (kmPrice * tripLenght) - (price * minorDiscount);
     console.log(price);
     }
     else if (valueAge >= 65){
-    price = kmPrice * tripLenght;
-    price -= price * oldDiscount;
+    price = (kmPrice * tripLenght) - (price - oldDiscount)
     console.log(price);
+    }
+    else {
+        price = kmPrice * tripLenght;
+        console.log(price);
     }
 })
 
