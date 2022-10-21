@@ -23,18 +23,20 @@ let passengerAge ="";
 let price="";
 
 // ALGORITMO
-function selectOption(){
+function select_option(){
     let passengerAge = document.getElementById(`passenger_age`);
-    let valueAge = passengerAge.option[passengerAge.selectedIndex].value;
+    let valueAge = passengerAge.options [passengerAge.selectedIndex].value;
+    console.log(typeof passengerAge);
+    console.log(typeof valueAge);
+    console.log(valueAge);
 }
-console.log(typeof passengerAge);
-console.log(typeof valueAge);
+
 
 ticketGenerator.addEventListener(`click`, function(){
     
     let price = kmPrice * tripLenght;
     console.log(price);
-
+    
     if (valueAge < 18){
     price = kmPrice * tripLenght;
     price -= price * minorDiscount;
