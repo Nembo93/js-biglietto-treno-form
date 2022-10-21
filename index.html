@@ -11,10 +11,10 @@
 
     <input type="text" name="Name" id="passenger" value="fra">
     <input type="number" name="trip_lenght" id="trip_lenght_km" value="10">
-    <select name="Age" id="passenger-age">
-        <option class="passenger_age" value="17">Maggiorenne</option>
-        <option class="passenger_age" value="18">Minorenne</option>
-        <option class="passenger_age" value="65">Over 65</option>
+    <select name="Age" id="passenger_age" onchange="selectOption()">
+        <option class="passenger_age_1" value="17">Minorenne</option>
+        <option class="passenger_age_2" value="18">Maggiorenne</option>
+        <option class="passenger_age_3" value="65">Over 65</option>
     </select>
     <button id="generator">Click</button>
 

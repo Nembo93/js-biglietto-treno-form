@@ -15,27 +15,32 @@ const minorDiscount = 0.2;
 const oldDiscount = 0.4;
 let discount="";
 // Bottone
-const ticketGenerator = document.getElementById(generator);
+const ticketGenerator = document.getElementById(`generator`);
 
-// Prezzo iniziale biglietto
-
+// Dichiarazione di variabili fuori dall'agloritmo per riutilizzo successivo
+let valueAge = "";
+let passengerAge ="";
+let price="";
 
 // ALGORITMO
-
-
+function selectOption(){
+    let passengerAge = document.getElementById(`passenger_age`);
+    let valueAge = passengerAge.option[passengerAge.selectedIndex].value;
+}
+console.log(typeof passengerAge);
+console.log(typeof valueAge);
 
 ticketGenerator.addEventListener(`click`, function(){
-    let passengerAge = document.querySelector(`.passenger_age`).value;
-    console.log(minorDiscount, oldDiscount, discount, passengerAge);   
+    
     let price = kmPrice * tripLenght;
     console.log(price);
 
-    if (passengerAge < 18){
+    if (valueAge < 18){
     price = kmPrice * tripLenght;
     price -= price * minorDiscount;
     console.log(price);
     }
-    else if (passengerAge >= 65){
+    else if (valueAge >= 65){
     price = kmPrice * tripLenght;
     price -= price * oldDiscount;
     console.log(price);
