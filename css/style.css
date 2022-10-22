@@ -7,17 +7,20 @@
 
 /* LAYOUT */
 .container{
-    width: 900px;
+    width: 1000px;
     background-color: rgb(185, 20, 80);
-    padding: 30px;
-
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
 }
 
 /* Box calcolo biglietto */
 .box-ticket-data{
     width: 80%;
     background-color: white;
-    height: 150px;
+    height: 200px;
     border-radius: 10px;
     margin: auto;
 }
@@ -40,9 +43,14 @@
 .box-ticket{
     background-color: white;
     width: 80%;
-    height: 150px;
+    height: 200px;
     margin: auto;
-    border-radius: 10px;
+    padding: 20px;
+}
+.ticket-details{
+    height: 80%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 
@@ -54,6 +62,9 @@
 }
 .space-around{
     justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
 }
 .d-block{
     display: block;
@@ -76,9 +87,21 @@ margin-left: 20;
     padding-left: 70px;
     padding-right: 70px;
 }
+.pad-20{
+    padding: 20px;
+}
 .p-t-30{
     padding-top: 30px;
 }
 .text-color{
     color: rgb(185, 20, 80);
+}
+.bg-color-gray{
+    background-color: gray;
+}
+.column{
+    flex-direction: column;
+}
+.color-white{
+    color: white;
 }
