@@ -1,3 +1,4 @@
+// DICHIARAZIONE VARIABILI INIZIALI
 // Tariffa a km
 const kmPrice=0.21;
 console.log(kmPrice);
@@ -6,9 +7,9 @@ const minorDiscount = 0.2;
 const oldDiscount = 0.4;
 let discount="";
 console.log(minorDiscount, oldDiscount, discount)
-// Bottone
-const ticketGenerator = document.getElementById(`generator`);
 
+// Bottone per avviare algoritmo
+const ticketGenerator = document.getElementById(`generator`);
 // ALGORITMO PER GENERARE BIGLIETTO
 ticketGenerator.addEventListener(`click`, function (){
 
@@ -37,6 +38,7 @@ ticketGenerator.addEventListener(`click`, function (){
     let price = kmPrice * tripLenght;
     console.log(price);
 
+    // Generatore biglietto
     if (valueAge < 18){
     price = (kmPrice * tripLenght) - (price * minorDiscount);
     console.log(price);
@@ -65,19 +67,17 @@ ticketGenerator.addEventListener(`click`, function (){
     document.getElementById(`cpCode`).innerHTML = cpCode;
 })
 
-
-
 // Funzione annulla
-// const cancelButton = document.getElementById(`cancel`);
-// console.log(cancelButton);
-
-// let ticket = document.getElementById(`box_ticket_generator`).classList;
-// console.log(ticket, typeof ticket);
-// ticket.classList.add("color_blue");
-
 function disp_none() {
+    // Nasconde biglietto
     ticket = document.getElementById(`box_ticket_generator`).classList;
     ticket.add(`d_none`);
+
+    // Resetta campi di compilazione
+    let passengerName = document.getElementById(`passenger`);
+    let tripLenght = document.getElementById(`trip_lenght_km`)
+    passengerName.value = ``;
+    tripLenght.value = ``;
 }
 
 
