@@ -14,6 +14,7 @@ ticketGenerator.addEventListener(`click`, function(){
     // Nome passeggero
     let passengerName = document.getElementById(`passenger`).value;
     console.log(passengerName);
+    document.getElementById(`pass_name`).innerHTML = passengerName;
 
     // Estrae valori da select
     let passenger_age = document.getElementById(`passenger_age`);
