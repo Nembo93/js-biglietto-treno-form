@@ -10,7 +10,12 @@ console.log(minorDiscount, oldDiscount, discount)
 const ticketGenerator = document.getElementById(`generator`);
 
 // ALGORITMO PER GENERARE BIGLIETTO
-ticketGenerator.addEventListener(`click`, function(){
+ticketGenerator.addEventListener(`click`, function (){
+
+    // Funzione per visualizzare biglietto
+    ticket = document.getElementById(`box_ticket_generator`).classList;
+    ticket.remove(`d_none`);
+
     // Nome passeggero
     let passengerName = document.getElementById(`passenger`).value;
     console.log(passengerName);
