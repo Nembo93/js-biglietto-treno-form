@@ -50,7 +50,16 @@ ticketGenerator.addEventListener(`click`, function(){
     document.getElementById(`saleType`).innerHTML=`Offerta standard`;
     document.getElementById(`ticketPrice`).innerHTML= price.toFixed(2);
     }
+
+    let wagon = Math.round(Math.random()* 10 + 1);
+    console.log(wagon);
+    document.getElementById(`wagon`).innerHTML = wagon;
+
+    let cpCode = Math.floor((Math.random() * (90000 - 99999)) + 90000);
+    console.log(cpCode);
+    document.getElementById(`cpCode`).innerHTML = cpCode;
 })
+
 
 
 // Funzione annulla
