@@ -69,6 +69,9 @@
 .d-block{
     display: block;
 }
+.d_none{
+    display: none;
+}
 .txtcenter{
     text-align: center;
 }
@@ -104,4 +107,10 @@ margin-left: 20;
 }
 .color-white{
     color: white;
+}
+.bg_color_white{
+    background-color: white;
+}
+.color_blue{
+    color: blue;
 }

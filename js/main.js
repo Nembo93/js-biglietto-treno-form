@@ -53,7 +53,12 @@ ticketGenerator.addEventListener(`click`, function(){
 })
 
 
+// Funzione annulla
+const cancelButton = document.getElementById(`cancel`);
 
+
+let ticket = document.getElementById(`box_ticket_generator`);
+ticket.classList.add("color_blue");
 
 
 
