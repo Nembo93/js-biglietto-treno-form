@@ -9,7 +9,7 @@ console.log(minorDiscount, oldDiscount, discount)
 // Bottone
 const ticketGenerator = document.getElementById(`generator`);
 
-
+// ALGORITMO PER GENERARE BIGLIETTO
 ticketGenerator.addEventListener(`click`, function(){
     // Nome passeggero
     let passengerName = document.getElementById(`passenger`).value;
@@ -63,11 +63,18 @@ ticketGenerator.addEventListener(`click`, function(){
 
 
 // Funzione annulla
-const cancelButton = document.getElementById(`cancel`);
+// const cancelButton = document.getElementById(`cancel`);
+// console.log(cancelButton);
 
+// let ticket = document.getElementById(`box_ticket_generator`).classList;
+// console.log(ticket, typeof ticket);
+// ticket.classList.add("color_blue");
 
-let ticket = document.getElementById(`box_ticket_generator`);
-ticket.classList.add("color_blue");
+function disp_none() {
+    ticket = document.getElementById(`box_ticket_generator`).classList;
+    ticket.add(`d_none`);
+}
+
 
 
 
