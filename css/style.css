@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+/* TYPOGRAPHY */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* LAYOUT */
 .container{
     width: 1000px;
@@ -52,8 +57,6 @@
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
-
-
 
 
 /* UTILITIES */
