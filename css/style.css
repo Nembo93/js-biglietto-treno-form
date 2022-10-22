@@ -1,0 +1,84 @@
+/* RESET */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* LAYOUT */
+.container{
+    width: 900px;
+    background-color: rgb(185, 20, 80);
+    padding: 30px;
+
+}
+
+/* Box calcolo biglietto */
+.box-ticket-data{
+    width: 80%;
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+    margin: auto;
+}
+.input-style{
+    border-radius: 5px;
+    border: 2px solid rgb(185, 20, 80);
+    padding: 5px 0;
+    text-align: center;
+}
+.button-style{
+    background-color: lightgray;
+    color: rgb(185, 20, 80);
+    padding: 7px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: medium;
+}
+
+/* Box generatore biglietto */
+.box-ticket{
+    background-color: white;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+
+
+/* UTILITIES */
+.d-flex{
+    display: flex;
+}
+.space-around{
+    justify-content: space-around;
+}
+.d-block{
+    display: block;
+}
+.txtcenter{
+    text-align: center;
+}
+.mtb-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.m-x-20{
+margin-right: 20px;
+margin-left: 20;
+}
+.height50{
+    height: 50%;
+}
+.pad70{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.p-t-30{
+    padding-top: 30px;
+}
+.text-color{
+    color: rgb(185, 20, 80);
+}

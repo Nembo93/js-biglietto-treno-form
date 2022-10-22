@@ -8,15 +8,54 @@
     <title>Biglietto treno</title>
 </head>
 <body>
+    <div class="container">
 
-    <input type="text" name="Name" id="passenger" value="fra">
-    <input type="number" name="trip_lenght" id="trip_lenght_km">
-    <select name="Age" id="passenger_age">
-        <option class="passenger_age_1" value="17">Minore</option>
-        <option class="passenger_age_2" value="18">Maggiorenne</option>
-        <option class="passenger_age_3" value="65">Over 65</option>
-    </select>
-    <button id="generator">Click</button>
+        <!-- Box calcolo biglietto -->
+        <div class="height50 txtcenter">
+            <h1 class="mtb-10">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+            <div class="box-ticket-data">
+                <div>
+                    <div class="d-flex space-around pad70">
+                        <div>
+                            <label for="passenger" class="d-block mtb-10 text-color">Nome passeggero</label>
+                            <input type="text" name="Name" id="passenger" class="input-style" value="fra">
+                        </div>
+                        <div>
+                            <label for="trip_lenght_km" class="d-block mtb-10 text-color">Km da percorrere</label>
+                            <input type="number" name="trip_lenght" id="trip_lenght_km" class="input-style">
+                        </div>
+                        <div>
+                            <label for="passenger_age" class="d-block mtb-10 text-color">Fascia d'età</label>
+                            <select name="Age" id="passenger_age" class="input-style">
+                                <option class="passenger_age_1" value="17">Minore</option>
+                                <option class="passenger_age_2" value="18">Maggiorenne</option>
+                                <option class="passenger_age_3" value="65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                                        
+                    <div class="box-button p-t-30">
+                        <button id="generator" class="button-style m-x-20">Genera</button>
+                        <button id="cancel" class="button-style m-x-20">Annulla</button>
+                    </div>    
+                </div>
+            </div>            
+        </div>
+
+        <!-- Box genera biglietto  -->
+        <div class="box-ticket-generator">
+            <h1 class="mtb-10 txtcenter">IL TUO BIGLIETTO</h1>
+            <div class="box-ticket">
+                <h2>DETTEGLIO PASSEGERI</h2>
+                <div>
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
 
     <script src="js/main.js"></script>
 </body>

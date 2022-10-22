@@ -1,10 +1,3 @@
-
-
-// VARIABILI
-// Nome passeggero
-let passengerName = document.getElementById(`passenger`).value;
-console.log(passengerName);
-
 // Tariffa a km
 const kmPrice=0.21;
 console.log(kmPrice);
@@ -16,19 +9,11 @@ console.log(minorDiscount, oldDiscount, discount)
 // Bottone
 const ticketGenerator = document.getElementById(`generator`);
 
-// Dichiarazione di variabili fuori dall'agloritmo per riutilizzo successivo
-
-// ALGORITMO
-// function select_option(){
-//     let passengerAge = document.getElementById(`passenger_age`);
-//     let valueAge = passengerAge.options [passengerAge.selectedIndex].value;
-// }
-//     console.log(typeof passengerAge);
-//     console.log(typeof valueAge);
-
-
 
 ticketGenerator.addEventListener(`click`, function(){
+    // Nome passeggero
+    let passengerName = document.getElementById(`passenger`).value;
+    console.log(passengerName);
 
     // Estrae valori da select
     let passenger_age = document.getElementById(`passenger_age`);
