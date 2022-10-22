@@ -36,16 +36,19 @@ ticketGenerator.addEventListener(`click`, function(){
     price = (kmPrice * tripLenght) - (price * minorDiscount);
     console.log(price);
     document.getElementById(`saleType`).innerHTML=`Sconto junior 20%`;
+    document.getElementById(`ticketPrice`).innerHTML= price;
     }
     else if (valueAge >= 65){
     price = (kmPrice * tripLenght) - (price * oldDiscount)
     console.log(price);
     document.getElementById(`saleType`).innerHTML=`Sconto over 40%`;
+    document.getElementById(`ticketPrice`).innerHTML= price;
     }
     else {
-        price = kmPrice * tripLenght;
-        console.log(price);
-        document.getElementById(`saleType`).innerHTML=`Offerta standard`;
+    price = kmPrice * tripLenght;
+    console.log(price);
+    document.getElementById(`saleType`).innerHTML=`Offerta standard`;
+    document.getElementById(`ticketPrice`).innerHTML= price;
     }
 })
 
