@@ -42,6 +42,11 @@ body{
     border-radius: 5px;
     border: 1px solid black;
     font-size: medium;
+    transition: border;
+}
+
+.button-style:hover{
+    border: 2px solid orange;
 }
 
 /* Box generatore biglietto */
