@@ -43,19 +43,19 @@ ticketGenerator.addEventListener(`click`, function (){
     price = (kmPrice * tripLenght) - (price * minorDiscount);
     console.log(price);
     document.getElementById(`saleType`).innerHTML=`Sconto junior 20%`;
-    document.getElementById(`ticketPrice`).innerHTML= price.toFixed(2);
+    document.getElementById(`ticketPrice`).innerHTML= price.toFixed(2) + `€`;
     }
     else if (valueAge >= 65){
     price = (kmPrice * tripLenght) - (price * oldDiscount)
     console.log(price);
     document.getElementById(`saleType`).innerHTML=`Sconto over 40%`;
-    document.getElementById(`ticketPrice`).innerHTML= price.toFixed(2);
+    document.getElementById(`ticketPrice`).innerHTML= price.toFixed(2) + `€`;
     }
     else {
     price = kmPrice * tripLenght;
     console.log(price);
     document.getElementById(`saleType`).innerHTML=`Offerta standard`;
-    document.getElementById(`ticketPrice`).innerHTML= price.toFixed(2);
+    document.getElementById(`ticketPrice`).innerHTML= price.toFixed(2) + `€`;
     }
 
     let wagon = Math.round(Math.random()* 10 + 1);
